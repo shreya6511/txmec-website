@@ -1,4 +1,5 @@
 /**header**/
+body,html{margin:0}
 *
 {
 	margin: 0;
@@ -6,7 +7,12 @@
 	font-family: sans-serif;
 }
 /**header**/
-.navbar{
+#nav-bar{
+	margin: 0 !important; 
+	padding: 0 !important; 
+}
+nav .navbar .navbar-expand-lg{
+	margin-top: 0!important; 
 	margin-bottom:0 !important; 
 }
 .logo-img{
@@ -16,7 +22,7 @@
 }
 .navbar-brand{
 	font-weight: bold; 
-	color: #5e5e5e !important;
+	color: #181619 !important;
 	letter-spacing: 2px;
 }
 .navbar-toggler{
@@ -33,7 +39,7 @@
 	float: left;
 }
 .nav-item a{
-	color:#5e5e5e;
+	color:#181619;
 	letter-spacing: 2px;
 }
 .nav-item{
@@ -43,23 +49,23 @@
 	margin-left: 1rem;
 }
 .navbar-nav li a:hover{
-	background-color: #df5b5b;
+	background-color: #E32F21;
 	color: white;
 }
 
 .header{
- color: #5e5e5e !important;
+ color: #181619 !important;
 
 }
 
 @media only screen and (min-width: 992px) {
 	.header{
-		 padding-top: 5rem;
+		padding-top: 0 !important;
 	}
 }
 @media only screen and (max-width: 990px) {
 	.header{
-		padding-top: 1rem;
+		padding-top: 0 !important; 
 	}
 
 }
@@ -68,9 +74,9 @@
 }
 
 #signup a{
-	color:#5e5e5e;
+	color:#181619;
 	letter-spacing: 2px;
-	background-color: #df5b5b;
+	background-color: #E32F21;
 	color: white;
 	padding: 1rem;
 	display: block;
@@ -81,7 +87,7 @@
 
 #signup a:hover{
 	text-decoration: none;
-	background-color: #39659f !important;
+	background-color: #7DBEB8 !important;
 }
 
 .btn .btn-primary{
@@ -90,15 +96,59 @@
 /**data**/
 .title1::before{
 	content: ' '; 
-	background: #39659f;
+	background: #ABCCBD;
 	height: 5px; 
 	width: 200px; 
 	margin-left: auto; 
 	margin-right: auto; 
 	display: block; 
 	transform: translateY(63px);
-
 }
+
+
+/**itemss section*/
+#items{
+	padding-bottom: 2rem;
+}
+.item-box{
+	text-align: center; 
+	padding: 35px 15px;
+	overflow: hidden;
+	position: relative;
+	transition: all 0.3s ease 0s; 
+}
+.item-box:hover{
+	background: #E32F21;
+}
+.item-box:before{
+	content: "";
+	width: 48px; 
+	height: 40px; 
+	border-width: 20px; 
+	border-style: solid;
+	border-color: white white rgba(1,1,1,0.2) rgba(0,0,0,0.2);
+	position: absolute;
+	top: -40px; 
+	right: -40px; 
+	transition: all 0.3s ease 0s;	
+}
+.item-box:hover:before{
+	top:0;
+	right:0;
+}
+.item-box i{
+	display: block; 
+	font-size: 65px; 
+	color: #181619;
+	margin-bottom: 14px; 
+	transition: all 0.3s ease 0s; 
+	padding-left:0.95rem;
+}
+.item-box .title{
+	font-size: 18px; 
+	letter-spacing: 2px;
+}
+
 
 @media only screen and (min-width:530px)
 {
@@ -111,7 +161,7 @@
 #data{
 	padding: 40px 80px;
 	background: #f8f9fa;
-	color: #5e5e5e;
+	color: #181619;
 }
 .service-img{
 	width: 170px;
@@ -131,7 +181,7 @@
 /**ways you can help**/
 #ways-to-help{
 	padding: 40px 80px;
-	color: #5e5e5e;
+	color: #181619;
 }
 .service-img{
 	width: 170px;
@@ -158,8 +208,8 @@
 /**footer**/
 .footer
 {
-	background-color: #2F5381;
-	color: white;
+	background-color: #7DBEB8;
+	color: #E4DED0;
 	padding-bottom: 3rem;
 	
 }
@@ -195,30 +245,30 @@
 		}
 }
 
-i{
+.socials a{
 	padding-right: 1rem;
+	font-size: 2.5rem;
 }
+.socials a:hover{
+	text-decoration: none;
+}
+
 
 /**our organizations page**/
 #banner-orgs{
-	color: #5e5e5e;
+	color: #181619;
 }
 #partner-logos{
 	background: #f8f9fa;
 }
 
 /**issues page**/
-.col-xl-7{
-	margin-right:1rem;
-}
 
 .issues
 {
-	color: #fff;
+	color:#181619;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
-
-
 }
 
 .issues h1
@@ -227,6 +277,7 @@ i{
 	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 10px;
+	color:#181619;
 }
 
 .issues h2
@@ -234,12 +285,28 @@ i{
 	text-align: left;
 	font-weight: bold;
 	font-size: 20px;
+	color:#181619;
 }
 
 .issues p
 {
 	float: left;
 	padding: 10px;
+}
+.issues li{
+	list-style: initial !important;
+}
+.left{
+	border-style: solid;
+	border-color: #E32F21; 
+	margin-right: 0.5rem;
+	border-width: thick;
+}
+.right{
+	border-style: solid;
+	border-color: #7DBEB8;
+	border-width: thick;
+}
 }
 
 @media only screen and (max-width:960px)
@@ -266,22 +333,28 @@ ul{
 #logo{
 	background: #f8f9fa;
 }
+#hastags{
+	background: #f8f9fa;
+}
+#posts{
+	padding-bottom: 3rem;
+}
 
 /**blog**/
 .btn 
 {
 	color: white !important;
-	background-color: #df5b5b !important;
+	background-color: #E32F21!important;
 }
 .btn:hover{
-	background-color: #39659f !important;
+	background-color: #7DBEB8 !important;
 }
 .card-header{
-	background-color: #2F5381 !important;
+	background-color: #ABCCBD !important;
 	color: white !important;
 }
 .card-footer{
-	background-color: #2F5381 !important;
+	background-color: #ABCCBD !important;
 	color: white !important;
 }
 /**get involved*/
@@ -296,7 +369,7 @@ ul{
 /**news*/
 #news{
 	padding: 40px 80px;
-	color: #5e5e5e;
+	color: #181619;
 	background: #f8f9fa;
 }
 /**get involved**/

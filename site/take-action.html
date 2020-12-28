@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,84 +9,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-    <title>Blog | TXMEC</title>
-    <style>
-      label {
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    display: block;
-    width: 251px;
-    height: 274px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-}
-
-.card {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transition: all 600ms;
-    transition: all 600ms;
-    z-index: 20;
-}
-
-    .card div {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background: #FFF;
-        text-align: center;
-        line-height: 274px;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        border-radius: 2px;
-    }
-
-    .card .back {
-        background: #222;
-        color: #FFF;
-        -webkit-transform: rotateX(180deg);
-        transform: rotateX(180deg);
-    }
-
-label:hover .card {
-    -webkit-transform: rotateX(20deg);
-    transform: rotateX(20deg);
-    box-shadow: 0 20px 20px rgba(50,50,50,.2);
-}
-
-input {
-    display: none;
-}
-
-:checked + .card {
-    transform: rotateX(180deg);
-    -webkit-transform: rotateX(180deg);
-}
-
-label:hover :checked + .card {
-    transform: rotateX(160deg);
-    -webkit-transform: rotateX(160deg);
-    box-shadow: 0 20px 20px rgba(255,255,255,.2);
-}
-    </style>
+    <title>Take Action | TXMEC</title>
   </head>
+  <body>
 
-<body>
 
 <!--start of navbar-->
 <section id="nav-bar">
   <nav class="navbar navbar-expand-lg static-top">
-  <a class="navbar-brand" href="index.html"><img class="logo-img" src="logo.png"></a>
+   <a class="navbar-brand" href="index.html"><img class="logo-img" src="logo.png" style="width: 10rem; padding-top: 1rem;;"></a>
   <button class="navbar-toggler ml-auto custom-toggler icon-bars" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -115,87 +46,80 @@ label:hover :checked + .card {
   </nav>
 </section>
 <!--end of navbar-->
-<img src="temp1.png" class="img-fluid" width="100%">
+<img src="ACTION.png" class="img-fluid" width="100%">
 
-<!--flip card-->
 
-<section id="flip-card">
-  <div class="container">
+<!--Take Action Cards-->
+<section id="items">
+    <div class="container">
+      <h1 class="text-center"> </h1>
+      <div class="about-border"></div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="item-box">
+              <i class="fa fa-globe" style="text-align: center;"></i>
+              <h4 class="title"> Name</h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+            </div>
+          </div>
 
-  <div class="container text-center">
-    <h1 class="title1 " style="color: #5e5e5e; padding-top:3rem; padding-bottom: 3rem;">Title</h1>
-  </div>
+            <div class="col-md-3 col-sm-6">
+            <div class="item-box">
+              <i class="fa fa-rocket"></i>
+              <h4 class="title"> Name</h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+            </div>
+          </div>
 
-    <div class="row">
-
-    <div class="col-md-4">
-    <div id="f1_container">
-      <div id="f1_card" class="shadow">
-        <div class="front face">
-          <img src="temp2.png" class="img-fluid">
+        <div class="col-md-3 col-sm-6">
+            <div class="item-box">
+              <i class="fa fa-edit"></i>
+              <h4 class="title"> Name</h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+            </div>
         </div>
-      <div class="back face center">
-          <p>Background Content</p>
-          <p>Any content can go here.</p>
-      </div>
-    </div>
-  </div>
-  </div>
 
-      <div class="col-md-4">
-    <div id="f1_container">
-      <div id="f1_card" class="shadow">
-        <div class="front face">
-          <img src="temp2.png" class="img-fluid">
+        <div class="col-md-3 col-sm-6">
+            <div class="item-box">
+              <i class="fa fa-cog"></i>
+              <h4 class="title"> Name</h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+            </div>
         </div>
-      <div class="back face center">
-          <p>Background Content</p>
-          <p>Any content can go here.</p>
-      </div>
     </div>
-  </div>
-  </div>
+  </section>
 
-  <div class="col-md-4">
-    <label>
-    <input type="checkbox"/>
-    <div class="card">
-        <div class="front"><img src="temp2.png"></div>
-        <div class="back">Back</div>
-    </div>
-    </label>
-  </div>
+<!--end-->
 
-</div>
-</div>
-</section>
+
 
 <!--get involved section?-->
 <section id="get-involved">
-<div class="get-involved text-center" style="background-color:#c30048; padding-top: 1rem; padding-bottom: 1rem;">
-  <a href="#" class="sign-btn">GET INVOLVED</a>
+<div class="get-involved text-center" style="background-color:#E32F21; padding-top: 1rem; padding-bottom: 1rem;">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY5sgAXu5tGQKDMqchj4RS3agZg2TxSs2c5FLDV2p-hzlVzQ/viewform?embedded=true" class="sign-btn">GET INVOLVED</a>
 </div>
 </section>
+
 <!--start of footer-->
 <section id="footer">
-<div class="footer" style="background-color: #2F5381;">
+<div class="footer" style="background-color: #7DBEB8;">
       <div class="container">
-      <div class="row" style="background-color: #2F5381;">
-        <div class="col-md-4" style="background-color: #2F5381;">
+      <div class="row" style="background-color: #7DBEB8;">
+        <div class="col-md-4" style="background-color: #7DBEB8;">
           <br>
           <br>
-          <p style="font-weight: bold; color: #DF5B5B; font-size: 20px;">
-            <span style="color: #fff">|   </span>About us
+          <p style="font-weight: bold; color: #E32F21; font-size: 20px;">
+            <span style="color: #E32F21">|   </span>About us
           </p>
           <p style="color: #fff">At consectetur lorem donec massa sapien faucibus et molestie ac. Molestie ac feugiat sed lectus vestibulum. Faucibus pulvinar elementum integer enim. Eu consequat ac felis donec et odio. Ac ut consequat semper viverra nam libero justo laoreet sit. Condimentum vitae sapien pellentesque habitant morbi.
           </p>
         </div>
 
-        <div class="col-md-4" style="background-color: #2F5381;">
+        <div class="col-md-4" style="background-color: #7DBEB8;">
           <br>
           <br>
-          <p style="font-weight: bold; color: #DF5B5B; font-size: 20px;">
-          <span style="color: #fff">|   </span>Navigate</p>
+          <p style="font-weight: bold; color: #E32F21; font-size: 20px;">
+          <span style="color: #E32F21">|   </span>Navigate</p>
           <div class="link-style">
             <a href="index.html"><p style="color: #fff;">Home</p></a>
           </div>
@@ -217,18 +141,20 @@ label:hover :checked + .card {
 
         </div>
 
-        <div class="col-md-4" style="background-color: #2F5381;">
+        <div class="col-md-4" style="background-color: #7DBEB8;">
           <br>
           <br>
-          <p style="font-weight: bold; color: #DF5B5B; font-size: 20px;">
-          <span style="color: #fff">|   </span>Follow Us</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-          <div class="socials">
-            <i class="fa fa-facebook fa-lg" style="color:#fff;"> </i> 
-            <i class="fa fa-linkedin fa-lg" style="color:#fff;"></i>
-            <i class="fa fa-instagram fa-lg" style="color:#fff;"></i>
-            <i class="fa fa-twitter fa-lg" style="color:#fff;"></i>
+          <p style="font-weight: bold; color: #E32F21; font-size: 20px;">
+          <span style="color: #E32F21">|   </span>Follow Us</p>
+          <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                   <div class="socials">
+            <a href="https://www.instagram.com/txmecoalition/?hl=en " class="fa fa-instagram fa-lg" style="color:#fff;"> </a>
+            <a href="https://twitter.com/txmecoalition?lang=en" class="fa fa-twitter fa-lg" style="color:#fff;"> </a>
           </div>
+           <p style="font-weight: bold; color: #E32F21; font-size: 20px;"><br>
+          <span style="color: #E32F21">|   </span>Google Calendar</p>
+          <p style="color: white;">Add us to your <u><a href="https://calendar.google.com/calendar/u/0?cid=a3BjZ3JwZW4yMGtqMnMxZ3Nobjc4dW5vaTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" style="color: #fff;">Google Calendar</a></u> to stay updated on what we do!</p>
+
         </div>
       </div>
       </div>
@@ -237,4 +163,6 @@ label:hover :checked + .card {
 <!--end of footer-->
 
 </body>
+
+
 </html>
